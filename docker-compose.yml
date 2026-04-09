@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    command: uvicorn apps.api.main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+
+  worker:
+    build: .
+    command: python -m core.orchestrator.worker
+    volumes:
+      - .:/app
+

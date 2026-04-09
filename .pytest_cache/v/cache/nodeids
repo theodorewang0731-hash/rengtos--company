@@ -1,0 +1,8 @@
+[
+  "tests/test_api.py::test_case_flow_and_repair_chain",
+  "tests/test_api.py::test_healthz",
+  "tests/test_api.py::test_permissions_endpoint",
+  "tests/test_state_machine.py::test_allows_valid_transition",
+  "tests/test_state_machine.py::test_rejects_invalid_transition",
+  "tests/test_state_machine.py::test_transition_matrix_contains_main_flow"
+]
